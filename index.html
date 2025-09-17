@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Oluwabunmi Adekunle-Mojeed - Data Analyst Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+
+  <link rel="stylesheet" href="css/aos.css" />
+
+  <link rel="stylesheet" href="css/ionicons.min.css" />
+
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/icomoon.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /*======================================
+//--//-->   ABOUT
+======================================*/
+
+    .about-mf .box-shadow-full {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .about-mf .about-img {
+      margin-bottom: 2rem;
+    }
+
+    .about-mf .about-img img {
+      margin-left: 10px;
+    }
+
+    .skill-mf .progress {
+      /* background-color: #cde1f8; */
+      margin: 0.5rem 0 1.2rem 0;
+      border-radius: 0;
+      height: 0.7rem;
+    }
+
+    .skill-mf .progress .progress-bar {
+      height: 0.7rem;
+      background-color: #ffbd39;
+    }
+
+    /* Animation styles */
+    #typing-animation {
+      position: relative;
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 3s steps(20, end) infinite;
+    }
+
+    #typing-animation:before {
+      content: "";
+      /* position: absolute; */
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: #ccc;
+      animation: typing-cursor 0.5s ease-in-out infinite;
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+
+    @keyframes typing-cursor {
+      from {
+        width: 5px;
+      }
+
+      to {
+        width: 0;
+      }
+    }
+
+    /* project image zoom effect */
+
+    .zoom-effect {
+      overflow: hidden;
+      transition: transform 0.3s ease-out;
+    }
+
+    .zoom-effect:hover {
+      transform: scale(1.1);
+    }
+
+    /* From Uiverse.io by PriyanshuGupta28 */
+    .card {
+      height: 20rem;
+      background: lightgrey;
+      background-color: #4158d0;
+      background-image: linear-gradient(43deg,
+          #4158d0 0%,
+          #c850c0 46%,
+          #ffcc70 100%);
+      border-top-left-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+      padding: 1rem;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      transition: 0.5s ease-in-out;
+      margin-top: 3rem;
+    }
+
+    .heading {
+      text-align: center;
+      font-weight: 600;
+      padding-top: 1rem;
+      font-size: large;
+    }
+
+    .input-div {
+      display: flex;
+      margin-top: 1rem;
+      transition: 0.5s ease-in-out;
+    }
+
+    .card input {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid black;
+      width: 12rem;
+      padding: 8px;
+      outline: none;
+    }
+
+    .button-div {
+      text-align: center;
+    }
+
+    .submit {
+      margin-top: 3rem;
+      text-align: center;
+      padding: 8px 3rem;
+      border: none;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      background-color: white;
+      color: black;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+    }
+
+    .submit:hover {
+      box-shadow: rgba(44, 43, 43, 0.664) 5px 5px,
+        rgba(45, 45, 45, 0.3) 10px 10px, rgba(60, 59, 59, 0.2) 15px 15px,
+        rgba(54, 53, 53, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    }
+
+    .card input::placeholder {
+      color: black;
+    }
+
+    .input:focus {
+      transition: 0.2s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    .input:hover {
+      transition: 0.2s ease-in-out;
+      box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+        rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+        rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset,
+        rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+        rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+        rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Oluwabunmi Adekunle-Mojeed</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item">
+            <a href="#home-section" class="nav-link"><span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-section" class="nav-link"><span>About</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#resume-section" class="nav-link"><span>Resume</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#project-section" class="nav-link"><span>Projects</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-section" class="nav-link"><span>Contact</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+            data-scrollax-parent="true">
+            <div class="one-third js-fullheight order-md-last img" style="background-image: url(images/chat.png)">
+              <div class="overlay"></div>
+            </div>
+            <div class="one-forth d-flex align-items-center ftco-animate"
+              data-scrollax=" properties: { translateY: '70%' }">
+              <div class="text">
+                <span class="subheading">Hello!</span>
+                <h1 class="mb-4 mt-3">I'm <span>Oluwabunmi Adekunle-Mojeed</span></h1>
+
+                <!-- Element to contain animated typing -->
+                <span id="typing-animation"></span>
+
+                <script>
+                  // Initialize the typing animation
+                  const typingAnimationElement =
+                    document.getElementById("typing-animation");
+
+                  // Create an array of typing text
+                  const typingTexts = ["Data Analyst  "];
+
+                  // Create a function to display the typing animation for a given text
+                  function playTypingAnimation(text) {
+                    // Loop through each character and add it to the element
+                    for (let i = 0; i < text.length; i++) {
+                      setTimeout(() => {
+                        typingAnimationElement.textContent += text[i];
+                      }, i * 200); // Increase the delay to slow down the typing animation
+                    }
+
+                    // Once the animation is complete, reset the text and start over
+                    setTimeout(() => {
+                      typingAnimationElement.textContent = "";
+                      playTypingAnimation(
+                        typingTexts[
+                        (typingTexts.indexOf(text) + 1) % typingTexts.length
+                        ]
+                      );
+                    }, text.length * 200);
+                  }
+
+                  // Start the typing animation loop
+                  playTypingAnimation(typingTexts[0]);
+                </script>
+
+                <br />
+                <br />
+                <h2>A Data Analyst</h2>
+                <h2 class="d-flex" style="margin-bottom: 0">With 15+ years of experience</h2>
+                <br>
+                <p><a href="#" class="btn btn-primary py-3 px-4">LinkedIn</a>
+                  <a href="#project-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="row d-flex align-items-stretch">
+          <!-- <div class="row d-flex"> -->
+          <div class="col-md-6 col-lg-5 d-flex">
+            <div class="img-about img d-flex align-items-stretch">
+              <div class="overlay">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="images/profile.jpg" class="img-fluid rounded-circle b-shadow-a" alt="" />
+                    </div>
+                  </div>
+                  <!-- Details next to profile image -->
+                  <div class="col-sm-6 col-md-7">
+                    <div class="about-info">
+                      <p>
+                        <span class="title-s">Name: </span>
+                        <span>Oluwabunmi Adekunle-Mojeed</span>
+                      </p>
+                      <p>
+                        <span class="title-s">Job Role: </span>
+                        <span>Data Analyst</span>
+                      </p>
+                      <p>
+                        <span class="title-s">Experience: </span>
+                        <span>15+ Years</span>
+                      </p>
+                      <p>
+                        <span class="title-s">Location: </span>
+                        <span>Largo, MD</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skill-mf">
+                  <p class="title-s">Skills</p>
+                  <span>Power BI</span> <span class="pull-right">95%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <span>Tableau</span> <span class="pull-right">90%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <span>SQL</span>
+                  <span class="pull-right">85%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <span>Excel</span>
+                  <span class="pull-right">98%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 98%" aria-valuenow="98" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+
+                  <span>Python</span>
+                  <span class="pull-right">80%</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
+                      aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+            <div class="row justify-content-start pb-3">
+              <div class="col-md-12 heading-section ftco-animate">
+                <h1 class="big">About</h1>
+                <h2 class="mb-4">About Me</h2>
+
+                <p>
+                  Multifaceted professional with over 15 years of diverse experience in data analysis,
+                  financial management, healthcare support, project management, customer service, and
+                  education consulting. Adept at managing cross-functional teams, handling data-driven
+                  decision-making, and streamlining operational efficiency. Combines technical skills with
+                  leadership to drive organizational success.
+                </p>
+
+                <ul class="about-info mt-4 px-md-0 px-2">
+                  <li class="d-flex">
+                    <span>Profile:</span> <span>Data Analysis & Visualization</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Domain:</span>
+                    <span>Healthcare, Education, Financial Services, Logistics</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Education:</span>
+                    <span>MBA, Finance - Lagos State University</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Language:</span> <span>English</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>BI Tools:</span>
+                    <span>Microsoft Power BI, Tableau, Power Query, Excel</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Other Skills:</span>
+                    <span>SQL, CRM Tools, Data Modeling, Project Management</span>
+                  </li>
+                  <li class="d-flex">
+                    <span>Certifications:</span>
+                    <span>Data Science and Analysis, Microsoft Data Analyst, SQL, Tableau, CMT, CNA</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+                <p class="mb-4">
+                  <span class="number" data-number="15">0</span>
+                  <span>+</span>
+                  <span>&nbsp; Years Professional Experience</span>
+                </p>
+                <p>
+                  <a href="#" class="btn btn-primary py-3 px-3">LinkedIn</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pb" id="resume-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-10 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Resume</h1>
+          <h2 class="mb-4">Resume</h2>
+          <p>
+            Experienced professional with expertise in data analysis, healthcare, financial management, and education
+            consulting.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1 class="big-4">Experience</h1>
+        <div class="underline"></div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2023-Present</span>
+            <h2>House Manager II</h2>
+            <span class="position">Creative Options Inc., Largo, MD</span>
+            <p class="mt-4">
+            <ul>
+              <li>Oversees day-to-day operations of residential homes for individuals with intellectual disabilities
+              </li>
+              <li>Conducts staff training, medication audits, incident reporting, and compliance with agency protocols
+              </li>
+              <li>Coordinates with medical professionals, families, and external personnel for holistic care delivery
+              </li>
+              <li>Utilizes digital tools to complete administrative and operational reports efficiently</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2022-2023</span>
+            <h2>CMT / Direct Support Professional</h2>
+            <span class="position">Able Healthcare Services, MD</span>
+            <p class="mt-4">
+            <ul>
+              <li>Provided personal and employment support to adults with intellectual disabilities</li>
+              <li>Administered medications as per PMOF and MAR standards; recorded and reported medical updates</li>
+              <li>Maintained accurate program documentation, monthly reports, and compliance audits</li>
+              <li>Supported patients in developing independent living skills and attending medical appointments</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2022</span>
+            <h2>CMT / Direct Support Professional</h2>
+            <span class="position">Life Care Health Services, MD</span>
+            <p class="mt-4">
+            <ul>
+              <li>Ensured safe, hygienic, and supportive environments in residential care homes</li>
+              <li>Delivered hands-on care, emergency response, and training in accordance with policy</li>
+              <li>Maintained accurate documentation including incident logs, inventories, and safety checks</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2016-2021</span>
+            <h2>Business Data Analyst – Education Strategy</h2>
+            <span class="position">Cresthall Educational Consult Ltd., Nigeria (Remote & Onsite)</span>
+            <p class="mt-4">
+            <ul>
+              <li>Used Power BI and Excel to analyse student enrollment trends, marketing ROI, and success rates across
+                international education programs</li>
+              <li>Maintained CRM data, tracked lead conversion metrics, and generated strategic insights to improve
+                partner engagement</li>
+              <li>Created financial models and what-if scenarios for product development and international expansion
+              </li>
+              <li>Visualized partner and branch performance using KPI dashboards</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2002-2009</span>
+            <h2>Customer Data Analyst / CRM & Sales Support</h2>
+            <span class="position">DHL Nigeria, Nigeria</span>
+            <p class="mt-4">
+            <ul>
+              <li>Analyzed customer feedback and service data to recommend improvements in turnaround time and customer
+                satisfaction</li>
+              <li>Built automated sales performance reports and customer service summaries using Excel and CRM reports
+              </li>
+              <li>Generated weekly dashboards tracking KPIs such as delivery accuracy, client churn, and sales volume
+              </li>
+              <li>Supported strategic decision-making by summarizing key trends in sales and support data</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br />
+      <br />
+
+      <div class="row">
+        <h1 class="big-4">Education</h1>
+        <div class="underline"></div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">2006</span>
+            <h2>MBA, Finance</h2>
+            <span class="position">Lagos State University (WES Evaluated)</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <span class="date">1998</span>
+            <h2>Bachelor of Accounting</h2>
+            <span class="position">Ondo State Polytechnic (WES Evaluated)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h1 class="big-4">Certifications</h1>
+        <div class="underline"></div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <h2>Data Science and Analysis</h2>
+            <span class="position">Prince George's Community College</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <h2>Data Analyst Certificate</h2>
+            <span class="position">Microsoft</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <h2>SQL Certification</h2>
+            <span class="position">University of Michigan</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <h2>Fundamentals of Visualization with Tableau</h2>
+            <span class="position">University of California</span>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <h2>Certified Medication Technician (CMT)</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="resume-wrap ftco-animate">
+            <h2>Certified Nursing Assistant (CNA)</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 text-center ftco-animate">
+          <p>
+            <a href="https://drive.google.com/file/d/1HEN9-VrhcyZ6lBw1miufSSmCtT1oSjqm/view"
+              class="btn btn-primary py-4 px-5" target="_blank">Download CV</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" id="project-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Projects</h1>
+          <h2 class="mb-4">Projects</h2>
+          <p>
+            Financial data analysis and reporting projects demonstrating expertise in grants management and compliance.
+          </p>
+        </div>
+      </div>
+      <div class="row d-flex">
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="" class="block-20 zoom-effect" style="background-image: url('images/finance1.jpg')">
+            </a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading">
+                <a href="">Workday Grant Management Implementation</a>
+              </h3>
+              <p>
+                Led the implementation of Workday Grants module for Baltimore City, designing data migration strategy
+                and test cases.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <a href="" class="block-20 zoom-effect" style="background-image: url('images/finance2.jpg')">
+            </a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading">
+                <a href="">$35M Health Program Funds Analysis</a>
+              </h3>
+              <p>
+                Developed dashboards and reports to track Federal, State and City funds allocation for health programs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry">
+            <a href="" class="block-20 zoom-effect" style="background-image: url('images/finance3.jpg')">
+            </a>
+            <div class="text mt-3 float-right d-block">
+              <h3 class="heading">
+                <a href="">Financial Compliance Reporting Automation</a>
+              </h3>
+              <p>
+                Automated financial reporting processes using Excel and SQL, improving efficiency by 30%.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+      <div class="row justify-content-center">
+        <div class="col-md-7 ftco-animate text-center">
+          <h2>I worked on more <span> projects </span></h2>
+          <div class="heading">
+            <h4>
+              I specialize in transforming financial data into actionable insights for government and healthcare
+              organizations
+            </h4>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Start of the Contact Section -->
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <!-- Container for layout alignment -->
+    <div class="container">
+      <!-- Section heading -->
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Contact</h1>
+          <!-- Large heading in background -->
+          <h2 class="mb-4">Contact Me</h2>
+          <!-- Section title -->
+          <p>Below are the details to reach out to me!</p>
+          <!-- Description -->
+        </div>
+      </div>
+
+      <!-- Contact info section -->
+      <div class="row d-flex contact-info mb-5">
+        <!-- Address box -->
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-map-signs"></span>
+              <!-- Map icon -->
+            </div>
+            <h3 class="mb-4">Location</h3>
+            <p>Largo, MD</p>
+            <!-- User's address -->
+          </div>
+        </div>
+
+        <!-- Contact Number box -->
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-phone2"></span>
+              <!-- Phone icon -->
+            </div>
+            <h3 class="mb-4">Contact Number</h3>
+            <p><a href="tel:+19842689216">(984) 268-9216</a></p>
+            <!-- Clickable phone link -->
+          </div>
+        </div>
+
+        <!-- Email Address box -->
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-paper-plane"></span>
+              <!-- Email icon -->
+            </div>
+            <h3 class="mb-4">Email Address</h3>
+            <p>
+              <a href="mailto:olubunmimojeed@yahoo.com">olubunmimojeed@yahoo.com</a>
+            </p>
+            <!-- Clickable email link -->
+          </div>
+        </div>
+
+        <!-- Resume Download box -->
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-globe"></span>
+              <!-- Globe icon -->
+            </div>
+            <h3 class="mb-4">LinkedIn</h3>
+            <p>
+              <a href="#">linkedin.com/in/oluwabunmi-adekunle-mojeed</a>
+            </p>
+            <!-- LinkedIn link -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Extra contact prompt and form -->
+      <div class="container">
+        <br />
+        <br />
+        <!-- Centered question and button -->
+        <div class="row justify-content-center">
+          <div class="col-md-7 ftco-animate text-center">
+            <h2>
+              Have a <span>Question?</span>
+              <a href="" class="btn btn-primary py-3 px-5">contact me</a>
+              <!-- Call-to-action button -->
+            </h2>
+
+            <!-- Custom form card from Uiverse.io -->
+            <div class="card">
+              <p class="heading"></p>
+              <!-- Optional heading -->
+
+              <!-- Email input -->
+              <div class="input-div">
+                <input type="text" class="input" placeholder="Email" />
+              </div>
+
+              <!-- Phone input -->
+              <div class="input-div">
+                <input class="input" type="text" placeholder="Phone" />
+              </div>
+
+              <!-- Message input -->
+              <div class="input-div">
+                <input class="input" type="text" placeholder="Message" />
+              </div>
+
+              <!-- Submit button -->
+              <div class="button-div">
+                <button class="submit">Submit</button>
+              </div>
+            </div>
+            <!-- End of custom form card -->
+          </div>
+        </div>
+
+        <br />
+
+        <!-- Social media links -->
+        <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+          <li class="ftco-animate normal-txt">Find me on</li>
+          <!-- Label -->
+
+          <!-- LinkedIn profile -->
+          <li class="ftco-animate">
+            <a href="#">
+              <span class="icon-linkedin"></span>
+            </a>
+          </li>
+        </ul>
+        <br />
+      </div>
+      <!-- End inner container -->
+    </div>
+    <!-- End main container -->
+  </section>
+  <!-- End of Contact Section -->
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved | This template is made with
+            <i class="icon-heart color-danger" aria-hidden="true"></i> by
+            <a href="https://www.linkedin.com/in/sagargupta12396/" target="_blank">Sagar Gupta</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg>
+  </div>
+
+  <script>
+    document.querySelector(".submit").addEventListener("click", function () {
+      const email = document
+        .querySelector('input[placeholder="Email"]')
+        .value.trim();
+      const phone = document
+        .querySelector('input[placeholder="Phone"]')
+        .value.trim();
+      const message = document
+        .querySelector('input[placeholder="Message"]')
+        .value.trim();
+
+      // Simple email and phone validation
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      const phonePattern = /^[0-9]{10}$/;
+
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email.");
+        return;
+      }
+
+      if (!phonePattern.test(phone)) {
+        alert("Please enter a valid 10-digit phone number.");
+        return;
+      }
+      // If valid, show success and clear fields
+      alert("Submitted successfully");
+
+      document
+        .querySelectorAll(".input")
+        .forEach((input) => (input.value = ""));
+    });
+  </script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
